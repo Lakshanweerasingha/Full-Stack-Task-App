@@ -1,0 +1,36 @@
+[2025-01-13 11:50:37] local.ERROR: Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at Command line code:1) in C:\Users\Lakshan\Documents\Todo App\Backend\bootstrap\app.php:29
+Stack trace:
+#0 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Cannot modify h...', 'C:\\Users\\Laksha...', 29)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'Cannot modify h...', 'C:\\Users\\Laksha...', 29)
+#2 C:\Users\Lakshan\Documents\Todo App\Backend\bootstrap\app.php(29): header('Access-Control-...')
+#3 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Foundation\Configuration\ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#4 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(1417): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#5 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(1353): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#6 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(1339): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#7 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(837): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#8 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1048): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#9 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(755): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#10 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1030): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#11 C:\Users\Lakshan\Documents\Todo App\Backend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(124): Illuminate\Foundation\Application->make('Illuminate\\Cont...', Array)
+#12 Command line code(1): app('Illuminate\\Cont...')
+#13 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at Command line code:1) in C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\bootstrap\\app.php:29
+Stack trace:
+#0 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(290): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Cannot modify h...', 'C:\\\\Users\\\\Laksha...', 29)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Cannot modify h...', 'C:\\\\Users\\\\Laksha...', 29)
+#2 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\bootstrap\\app.php(29): header('Access-Control-...')
+#3 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(281): {closure}(Object(Illuminate\\Foundation\\Configuration\\Middleware))
+#4 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1417): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}(Object(Illuminate\\Foundation\\Http\\Kernel), Object(Illuminate\\Foundation\\Application))
+#5 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1353): Illuminate\\Container\\Container->fireCallbackArray(Object(Illuminate\\Foundation\\Http\\Kernel), Array)
+#6 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1339): Illuminate\\Container\\Container->fireAfterResolvingCallbacks('Illuminate\\\\Cont...', Object(Illuminate\\Foundation\\Http\\Kernel))
+#7 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(837): Illuminate\\Container\\Container->fireResolvingCallbacks('Illuminate\\\\Cont...', Object(Illuminate\\Foundation\\Http\\Kernel))
+#8 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1048): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array, true)
+#9 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(755): Illuminate\\Foundation\\Application->resolve('Illuminate\\\\Cont...', Array)
+#10 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1030): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#11 C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(124): Illuminate\\Foundation\\Application->make('Illuminate\\\\Cont...', Array)
+#12 Command line code(1): app('Illuminate\\\\Cont...')
+#13 {main}
+  thrown at C:\\Users\\Lakshan\\Documents\\Todo App\\Backend\\bootstrap\\app.php:29)
+[stacktrace]
+#0 {main}
+"} 
